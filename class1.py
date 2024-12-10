@@ -13,6 +13,7 @@ list2 = ["John Elder", 41, list1, True]
 np1 = np.array([0,1,2,3,4,5,6,7,8,9])
 print(np1)
 print(np1.shape) 
+# Array Shape: (10,) — It's a one-dimensional array with 10 elements.
 # np.shape gives dimensions of array and np.size gives size of array and np.itemsize gives size of items/elements in array
 # array.size and np.size(array) are same
 # arr = np.array([[1, 2, 3], [4, 5, 6]], dtype=np.int32)
@@ -20,7 +21,7 @@ print(np1.shape)
 # arr.size  # Output: 6 (NOT 2) - it multiplies the dimensions in shape
 # len(arr)  # Output: 2 - returns the size of the first dimension/axis of the array (the number of rows in a 2D array).
 
-# Range
+# Range - last is excluded
 np2 = np.arange(10)
 print(np2)
 
@@ -28,9 +29,13 @@ print(np2)
 np3 = np.arange(0,10, 2)
 print(np3)
 
-# Zeros
+# Zeros - default is float
+# np4_int = np.zeros(10, dtype=int)  # Array of integers
 np4 = np.zeros(10)
 print(np4)
+# np4 = np.zeros((10)) - same output but functioning check kar lena
+# np4 = np.zeros((10,)) - is more explicit and consistent with multi-dimensional arrays.
+
 
 # Multidimensional zeros
 np5 = np.zeros((2,10))
