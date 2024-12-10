@@ -27,6 +27,6 @@ for x in np3:
 			print(z)
 '''
 
-# Use np.nditer()
-for x in np.nditer(np1):
+# Use np.nditer() - vo poora ek ek karke print kar dega hume teen for loop lagane ki zarurat nahi hai
+for x in np.nditer(np3):
 	print(x)
