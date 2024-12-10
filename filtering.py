@@ -22,7 +22,7 @@ print(np1[filtered])
 '''
 
 # Shortcut!
-filtered = np1 > 5
+filtered = np1 > 5 	#yeh filtered naam ka boolean array de dega
 print(np1)
 print(filtered)
 print(np1[filtered])
