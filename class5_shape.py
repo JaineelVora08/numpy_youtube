@@ -29,5 +29,8 @@ np5 = np4.reshape(-1)
 print(np5)
 print(np5.shape)
 
+# The arr.ravel() function in NumPy is used to return a flattened view (or copy) of a multi-dimensional array. This means it converts a multi-dimensional array (e.g., a 2D or 3D array) into a 1D array.
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+flat_arr = arr.ravel()
 
 
