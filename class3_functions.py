@@ -11,6 +11,19 @@ print(np1)
 # Absolute Value
 #print(np.absolute(np1))
 
+# So x=x*2 sirf numpy arrays pe kaam karega NOT normal lists
+'''
+# List operation
+x = [1, 2, 3]
+x = x * 2  # Reassign the modified list back to x
+print(x)  # Output: [1, 2, 3, 1, 2, 3]
+
+# Numpy array operation
+y = np.array([1, 2, 3])
+y = y * 2  # Element-wise multiplication of the array
+print(y)  # Output: [2, 4, 6]
+'''
+
 # Exponents - e^number
 #print(np.exp(np1))
 
