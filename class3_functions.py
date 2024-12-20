@@ -58,3 +58,11 @@ arr.argsort(axis=-1, kind='quicksort', order=None)
 
 # arr1+arr2 se normal matrix addition - if numpy arrays
 # but list1+list2 se list extend ho jaayegi
+
+# returns index
+np.where(ar>5) 
+# returns elements
+result = arr[arr > 5]
+
+np.count_nonzero(arr)
+np.nonzero(arr)
