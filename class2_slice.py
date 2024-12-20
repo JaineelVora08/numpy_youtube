@@ -40,3 +40,7 @@ print(np2[0:1, 1:3])
 print(np2[0:2, 1:3])
 # # prints [[2,3]
 	     [7,8]]
+
+b = np.array([[1, 2, 3], [4, 5, 6]])
+print(b.size)  # Output: 6 (total elements)
+print(len(b))  # Output: 2 (number of rows, first dimension)
