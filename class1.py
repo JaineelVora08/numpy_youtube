@@ -11,8 +11,10 @@ list2 = ["John Elder", 41, list1, True]
 # ndarray = n-dimensional array
 
 np1 = np.array([0,1,2,3,4,5,6,7,8,9])
+np1 = np.array([0,1,2,3,4,5,6,7,8,9],np.int32)
 print(np1)
 print(np1.shape) 
+print(np1.dtype) 
 # Array Shape: (10,) — It's a one-dimensional array with 10 elements.
 # np.shape gives dimensions of array and np.size gives size of array and np.itemsize gives size of items/elements in array
 # array.size and np.size(array) are same
@@ -56,3 +58,12 @@ print(np8)
 
 print(np8[0])
 
+np.array({34,23,23})
+# array will only be 34,23 - A set in Python removes duplicates, so when passing a set to np.array(), any repeated elements are eliminated.
+
+arr = np.empty((2, 3))
+# If you want a 1D array, for example, pass an integer. For 2D, pass a tuple of two integers (rows, columns).
+# np.empty() will contain whatever values were already present in that memory location, so the contents are essentially random or "uninitialized."
+
+# np.empty_like is a function in NumPy that creates a new array with the same shape and data type as an existing array, but with uninitialized (random or "garbage") values.
+b = np.empty_like(a)
